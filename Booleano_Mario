@@ -1,0 +1,8 @@
+val isAlive: Boolean
+get() {
+	return lives>=1
+}
+if(mario.isAlive){
+	mario.collision("Goomba")
+	println("Te quedan ${mario.getLives()}")
+}
