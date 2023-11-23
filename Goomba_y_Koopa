@@ -1,0 +1,13 @@
+//Clase Goomba
+class Goomba:
+	Enemy("Goomba", 1){
+
+	init {
+		println("iniciando subclase de $name")
+	}
+}
+
+//Clase Koopa
+class Koopa:
+	Enemy("Koopa",2){
+}
