@@ -1,0 +1,9 @@
+override fun collision(collider: Sting){
+	when(collider){
+		"Weapon" -> {
+			state = "Shell"
+			println("El estado es ahora $state")
+		}
+		"Enemy" -> changeDirection()
+	}
+}
