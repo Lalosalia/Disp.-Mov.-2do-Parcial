@@ -1,0 +1,28 @@
+class Travel {
+
+	protected val country: String
+	protected val city: String
+	protected val serviceType = "Viaje"
+	protected val reserved = false
+	protected val paidAmount = 0
+
+	fun reserve(numDays: Int){
+		if(reserved){
+			println("""¡Ya reservaste tu viaje!
+				País: $country
+				ciudad: $city
+				precio: $paidAmount""".trimMargin())
+			return
+		}
+		val amount = getPrice(numDays)
+		if (amount==0){
+			return
+		}
+		reserved = true
+		paidAmount = amount
+		println("""¡Viaje reservado exitosamente!
+				País: $country
+				Ciudad: $city
+				Precio: $paisAmount""". trimMargin())
+	}
+}
