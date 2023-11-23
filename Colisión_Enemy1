@@ -1,0 +1,3 @@
+override fun collision(collider: Sting){
+	super.collision(collider)
+	println("Usando la colision de la clase Enemy")}
